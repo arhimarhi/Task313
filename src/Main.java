@@ -10,19 +10,19 @@ public class Main {
         for (int i = 0; i < n; ++i) {
             a[i] = scanner.nextInt();
         }
-        int jj = 0;
+        int mm = 0;
         for (int i = 0; i < n; ++i) {
             b = false;
-            for (int j = i + 1; j < n; ++j) {
-                if (a[i] == a[j]) {
-                    jj = j;
+            for (int m = i + 1; m < n; ++m) {
+                if (a[i] == a[m]) {
+                    mm = m;
                     b = true;
                     break;
                 }
             }
             if (b) {
-                if (jj - i > s) {
-                    s = jj - i;
+                if (mm - i > s) {
+                    s = mm - i;
                 }
             }
         }
